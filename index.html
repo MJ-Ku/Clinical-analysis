@@ -1,0 +1,28 @@
+<h3>3. Which of the following is the proper way to make a correction to a CRF?</h3>
+
+<div class="quiz">
+  <button class="wrong">Completely blacken the incorrect entry</button>
+  <button class="wrong">Back date the corrected entry</button>
+  <button class="wrong">Initial using sponsor’s initials</button>
+  <button class="correct">Add the initials, date, and explanation</button>
+</div>
+
+<p class="explanation hidden">
+To make a correction to a CRF, the proper way is to add the initials of the person
+making the change, the date of the change, and, if necessary, a brief explanation.
+</p>
+
+<script>
+  const buttons = document.querySelectorAll('.quiz button');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(btn => btn.disabled = true);
+    if (b.classList.contains('correct')) b.style.backgroundColor = '#b7f7b7';
+    else b.style.backgroundColor = '#f8b7b7';
+    document.querySelector('.explanation').classList.remove('hidden');
+  }));
+</script>
+
+<style>
+.quiz button {margin:5px; padding:10px; border:1px solid #ccc; cursor:pointer;}
+.hidden {display:none;}
+</style>
