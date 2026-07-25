@@ -9,3 +9,6 @@ This folder contains my Python practice projects focused on clinical trial data 
 - Create simple data visualizations and dashboards
 
 > All datasets used in this project are synthetic and do not contain confidential or patient information.
+# 60 subjects in the 3 sites, seoul, near seoul, province
+
+- 
